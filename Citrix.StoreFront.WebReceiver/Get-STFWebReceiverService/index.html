@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Get-STFWebReceiverService - StoreFront SDK Documentation</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="../../css/override.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/font-awesome.css" type="text/css" />
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Get-STFWebReceiverService";
+    var mkdocs_page_input_path = "Citrix.StoreFront.WebReceiver/Get-STFWebReceiverService.md";
+    var mkdocs_page_url = "/Citrix.StoreFront.WebReceiver/Get-STFWebReceiverService/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+  <script src="../../js/custom.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://citrix.github.io" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="../..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront SDK PowerShell Modules</span></li>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../..">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Citrix.StoreFront/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Import-STFConfiguration/">Import-STFConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Export-STFConfiguration/">Export-STFConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Unprotect-STFConfigurationExport/">Unprotect-STFConfigurationExport</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Set-STFDeployment/">Set-STFDeployment</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFDeployment/">Get-STFDeployment</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Add-STFDeployment/">Add-STFDeployment</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Clear-STFDeployment/">Clear-STFDeployment</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Set-STFDiagnostics/">Set-STFDiagnostics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Set-STFDomainService/">Set-STFDomainService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFDomainService/">Get-STFDomainService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Uninstall-STFFeature/">Uninstall-STFFeature</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Install-STFFeature/">Install-STFFeature</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Reset-STFFeatureData/">Reset-STFFeatureData</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFFeatureState/">Get-STFFeatureState</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Add-STFFeatureState/">Add-STFFeatureState</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Remove-STFFeatureState/">Remove-STFFeatureState</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Set-STFFeatureState/">Set-STFFeatureState</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/New-STFFeatureState/">New-STFFeatureState</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFFeatureStateNames/">Get-STFFeatureStateNames</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/New-STFFeatureStateProperty/">New-STFFeatureStateProperty</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Clear-STFFeatureStates/">Clear-STFFeatureStates</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Remove-STFHmacKey/">Remove-STFHmacKey</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Add-STFHmacKey/">Add-STFHmacKey</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFHmacKey/">Get-STFHmacKey</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Update-STFHmacKey/">Update-STFHmacKey</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFInstalledFeatures/">Get-STFInstalledFeatures</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFPackage/">Get-STFPackage</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFPeerResolutionService/">Get-STFPeerResolutionService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Wait-STFPublishServerGroupConfiguration/">Wait-STFPublishServerGroupConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFServerGroup/">Get-STFServerGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Publish-STFServerGroupConfiguration/">Publish-STFServerGroupConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Start-STFServerGroupJoin/">Start-STFServerGroupJoin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Stop-STFServerGroupJoin/">Stop-STFServerGroupJoin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Wait-STFServerGroupJoin/">Wait-STFServerGroupJoin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFServerGroupJoinState/">Get-STFServerGroupJoinState</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Remove-STFServerGroupMember/">Remove-STFServerGroupMember</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Save-STFService/">Save-STFService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFServiceMonitor/">Get-STFServiceMonitor</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Set-STFServiceMonitor/">Set-STFServiceMonitor</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront/Get-STFVersion/">Get-STFVersion</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Citrix.StoreFront.Authentication/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Get-STFAuthenticationProtocolsAvailable/">Get-STFAuthenticationProtocolsAvailable</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Add-STFAuthenticationService/">Add-STFAuthenticationService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Get-STFAuthenticationService/">Get-STFAuthenticationService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Remove-STFAuthenticationService/">Remove-STFAuthenticationService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Add-STFAuthenticationServiceProtocol/">Add-STFAuthenticationServiceProtocol</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Remove-STFAuthenticationServiceProtocol/">Remove-STFAuthenticationServiceProtocol</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Get-STFAuthenticationServiceProtocol/">Get-STFAuthenticationServiceProtocol</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Enable-STFAuthenticationServiceProtocol/">Enable-STFAuthenticationServiceProtocol</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Disable-STFAuthenticationServiceProtocol/">Disable-STFAuthenticationServiceProtocol</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication/Set-STFClaimsFactoryNames/">Set-STFClaimsFactoryNames</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication.AccountSelfService</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.AccountSelfService/Citrix.StoreFront.Authentication.AccountSelfService/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.AccountSelfService/Set-STFAccountSelfService/">Set-STFAccountSelfService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.AccountSelfService/Get-STFAccountSelfService/">Get-STFAccountSelfService</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication.CitrixAGBasic</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.CitrixAGBasic/Citrix.StoreFront.Authentication.CitrixAGBasic/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.CitrixAGBasic/Set-STFCitrixAGBasicOptions/">Set-STFCitrixAGBasicOptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.CitrixAGBasic/Get-STFCitrixAGBasicOptions/">Get-STFCitrixAGBasicOptions</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication.Explicit</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Explicit/Citrix.StoreFront.Authentication.Explicit/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Explicit/Set-STFExplicitCommonOptions/">Set-STFExplicitCommonOptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Explicit/Get-STFExplicitCommonOptions/">Get-STFExplicitCommonOptions</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication.PasswordManager</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.PasswordManager/Citrix.StoreFront.Authentication.PasswordManager/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.PasswordManager/Set-STFPasswordManagerAccountSelfService/">Set-STFPasswordManagerAccountSelfService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.PasswordManager/Get-STFPasswordManagerAccountSelfService/">Get-STFPasswordManagerAccountSelfService</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication.PasswordValidator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.PasswordValidator/Citrix.StoreFront.Authentication.PasswordValidator/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.PasswordValidator/Set-STFExplicitAuthenticator/">Set-STFExplicitAuthenticator</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.PasswordValidator/Get-STFExplicitAuthenticator/">Get-STFExplicitAuthenticator</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication.Saml</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/Citrix.StoreFront.Authentication.Saml/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/Import-STFSamlEncryptionCertificate/">Import-STFSamlEncryptionCertificate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/New-STFSamlEncryptionCertificate/">New-STFSamlEncryptionCertificate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/Export-STFSamlEncryptionCertificate/">Export-STFSamlEncryptionCertificate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/New-STFSamlIdPCertificate/">New-STFSamlIdPCertificate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/Update-STFSamlIdPFromMetadata/">Update-STFSamlIdPFromMetadata</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/Set-STFSamlRequireArtifactResolution/">Set-STFSamlRequireArtifactResolution</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/Export-STFSamlSigningCertificate/">Export-STFSamlSigningCertificate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/Import-STFSamlSigningCertificate/">Import-STFSamlSigningCertificate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.Saml/New-STFSamlSigningCertificate/">New-STFSamlSigningCertificate</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Authentication.XmlServiceValidator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.XmlServiceValidator/Citrix.StoreFront.Authentication.XmlServiceValidator/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Authentication.XmlServiceValidator/Enable-STFXmlServiceAuthentication/">Enable-STFXmlServiceAuthentication</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Roaming</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Citrix.StoreFront.Roaming/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Read-STFNetScalerConfiguration/">Read-STFNetScalerConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Import-STFNetScalerConfiguration/">Import-STFNetScalerConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Set-STFRoamingAccount/">Set-STFRoamingAccount</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Get-STFRoamingAccount/">Get-STFRoamingAccount</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Set-STFRoamingBeacon/">Set-STFRoamingBeacon</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Get-STFRoamingBeacon/">Get-STFRoamingBeacon</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Clear-STFRoamingBeacon/">Clear-STFRoamingBeacon</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Set-STFRoamingGateway/">Set-STFRoamingGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Remove-STFRoamingGateway/">Remove-STFRoamingGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Get-STFRoamingGateway/">Get-STFRoamingGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Add-STFRoamingGateway/">Add-STFRoamingGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/New-STFRoamingGateway/">New-STFRoamingGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Get-STFRoamingService/">Get-STFRoamingService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Get-STFRoamingServiceRecord/">Get-STFRoamingServiceRecord</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Update-STFSecureTicketAuthority/">Update-STFSecureTicketAuthority</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Roaming/Test-STFSecureTicketAuthority/">Test-STFSecureTicketAuthority</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Stores</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Citrix.StoreFront.Stores/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Clear-STFDefaultPnaStore/">Clear-STFDefaultPnaStore</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Add-STFSessionManagerTrustedIssuer/">Add-STFSessionManagerTrustedIssuer</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Remove-STFSessionManagerTrustedIssuer/">Remove-STFSessionManagerTrustedIssuer</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/New-STFSessionManagerTrustedIssuer/">New-STFSessionManagerTrustedIssuer</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStoreEnumerationOptions/">Set-STFStoreEnumerationOptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreEnumerationOptions/">Get-STFStoreEnumerationOptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/New-STFStoreFarm/">New-STFStoreFarm</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStoreFarm/">Set-STFStoreFarm</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Remove-STFStoreFarm/">Remove-STFStoreFarm</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Add-STFStoreFarm/">Add-STFStoreFarm</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreFarm/">Get-STFStoreFarm</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStoreFarmConfiguration/">Set-STFStoreFarmConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreFarmConfiguration/">Get-STFStoreFarmConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Unregister-STFStoreGateway/">Unregister-STFStoreGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Register-STFStoreGateway/">Register-STFStoreGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStoreGatewayService/">Set-STFStoreGatewayService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreGatewayService/">Get-STFStoreGatewayService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreLaunchOptions/">Get-STFStoreLaunchOptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStoreLaunchOptions/">Set-STFStoreLaunchOptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Register-STFStoreOptimalLaunchGateway/">Register-STFStoreOptimalLaunchGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Unregister-STFStoreOptimalLaunchGateway/">Unregister-STFStoreOptimalLaunchGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Enable-STFStorePna/">Enable-STFStorePna</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStorePna/">Get-STFStorePna</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Disable-STFStorePna/">Disable-STFStorePna</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStorePnaSmartAccess/">Get-STFStorePnaSmartAccess</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Grant-STFStorePnaSmartAccess/">Grant-STFStorePnaSmartAccess</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStorePnaSmartAccess/">Set-STFStorePnaSmartAccess</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Revoke-STFStorePnaSmartAccess/">Revoke-STFStorePnaSmartAccess</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreRegisteredGateway/">Get-STFStoreRegisteredGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreRegisteredOptimalLaunchGateway/">Get-STFStoreRegisteredOptimalLaunchGateway</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStoreService/">Set-STFStoreService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Add-STFStoreService/">Add-STFStoreService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Remove-STFStoreService/">Remove-STFStoreService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreService/">Get-STFStoreService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Get-STFStoreSubscriptionsDatabase/">Get-STFStoreSubscriptionsDatabase</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores/Set-STFStoreSubscriptionsDatabase/">Set-STFStoreSubscriptionsDatabase</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.Stores.MultiSite</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/Citrix.StoreFront.Stores.MultiSite/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/Get-STFEquivalentFarmset/">Get-STFEquivalentFarmset</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/New-STFEquivalentFarmset/">New-STFEquivalentFarmset</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/Set-STFUserFarmMapping/">Set-STFUserFarmMapping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/Remove-STFUserFarmMapping/">Remove-STFUserFarmMapping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/Add-STFUserFarmMapping/">Add-STFUserFarmMapping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/Get-STFUserFarmMapping/">Get-STFUserFarmMapping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/New-STFUserFarmMappingGroup/">New-STFUserFarmMappingGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.Stores.MultiSite/Clear-STFUserFarmMappings/">Clear-STFUserFarmMappings</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.SubscriptionsStore</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Citrix.StoreFront.SubscriptionsStore/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Get-STFComputerSynchronizationPermission/">Get-STFComputerSynchronizationPermission</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Grant-STFComputerSynchronizationPermission/">Grant-STFComputerSynchronizationPermission</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Revoke-STFComputerSynchronizationPermission/">Revoke-STFComputerSynchronizationPermission</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Import-STFStoreSubscriptions/">Import-STFStoreSubscriptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Export-STFStoreSubscriptions/">Export-STFStoreSubscriptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Restore-STFStoreSubscriptions/">Restore-STFStoreSubscriptions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Get-STFSubscriptionStoreService/">Get-STFSubscriptionStoreService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Clear-STFSubscriptionSynchronizationSchedule/">Clear-STFSubscriptionSynchronizationSchedule</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Add-STFSubscriptionSynchronizationSchedule/">Add-STFSubscriptionSynchronizationSchedule</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Get-STFSubscriptionSynchronizationSchedule/">Get-STFSubscriptionSynchronizationSchedule</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Add-STFSubscriptionSynchronizationSource/">Add-STFSubscriptionSynchronizationSource</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Clear-STFSubscriptionSynchronizationSource/">Clear-STFSubscriptionSynchronizationSource</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Get-STFSubscriptionSynchronizationSource/">Get-STFSubscriptionSynchronizationSource</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../../Citrix.StoreFront.SubscriptionsStore/Remove-STFSubscriptionSynchronizationSource/">Remove-STFSubscriptionSynchronizationSource</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Citrix.StoreFront.WebReceiver</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Citrix.StoreFront.WebReceiver/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFDesktopApplianceService/">Set-STFDesktopApplianceService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFDesktopApplianceService/">Get-STFDesktopApplianceService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Add-STFDesktopApplianceService/">Add-STFDesktopApplianceService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Remove-STFDesktopApplianceService/">Remove-STFDesktopApplianceService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFIISSitesInfo/">Get-STFIISSitesInfo</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverApplicationShortcuts/">Set-STFWebReceiverApplicationShortcuts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverApplicationShortcuts/">Get-STFWebReceiverApplicationShortcuts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverAuthenticationManager/">Set-STFWebReceiverAuthenticationManager</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverAuthenticationManager/">Get-STFWebReceiverAuthenticationManager</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverAuthenticationMethods/">Set-STFWebReceiverAuthenticationMethods</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverAuthenticationMethods/">Get-STFWebReceiverAuthenticationMethods</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverAuthenticationMethodsAvailable/">Get-STFWebReceiverAuthenticationMethodsAvailable</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../New-STFWebReceiverClientPlugin/">New-STFWebReceiverClientPlugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Remove-STFWebReceiverClientPlugin/">Remove-STFWebReceiverClientPlugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Add-STFWebReceiverClientPlugin/">Add-STFWebReceiverClientPlugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverClientPlugin/">Get-STFWebReceiverClientPlugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Clear-STFWebReceiverClientPlugin/">Clear-STFWebReceiverClientPlugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverClientPlugin/">Set-STFWebReceiverClientPlugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverCommunication/">Set-STFWebReceiverCommunication</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverCommunication/">Get-STFWebReceiverCommunication</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverDefaultSiteStyle/">Get-STFWebReceiverDefaultSiteStyle</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverDiscoveryService/">Get-STFWebReceiverDiscoveryService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverDiscoveryService/">Set-STFWebReceiverDiscoveryService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Add-STFWebReceiverFeature/">Add-STFWebReceiverFeature</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverFeature/">Get-STFWebReceiverFeature</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Remove-STFWebReceiverFeature/">Remove-STFWebReceiverFeature</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Remove-STFWebReceiverFeaturedAppGroup/">Remove-STFWebReceiverFeaturedAppGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../New-STFWebReceiverFeaturedAppGroup/">New-STFWebReceiverFeaturedAppGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Clear-STFWebReceiverFeaturedAppGroup/">Clear-STFWebReceiverFeaturedAppGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverFeaturedAppGroup/">Get-STFWebReceiverFeaturedAppGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverFeaturedAppGroup/">Set-STFWebReceiverFeaturedAppGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Add-STFWebReceiverFeaturedAppGroup/">Add-STFWebReceiverFeaturedAppGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverFeaturedAppGroups/">Set-STFWebReceiverFeaturedAppGroups</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverFeaturedAppGroupTiles/">Get-STFWebReceiverFeaturedAppGroupTiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverPluginAssistant/">Get-STFWebReceiverPluginAssistant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverPluginAssistant/">Set-STFWebReceiverPluginAssistant</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverResourcesService/">Set-STFWebReceiverResourcesService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverResourcesService/">Get-STFWebReceiverResourcesService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverService/">Set-STFWebReceiverService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Remove-STFWebReceiverService/">Remove-STFWebReceiverService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Add-STFWebReceiverService/">Add-STFWebReceiverService</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <span class="expli"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a class="current" style="width:250px;" href="./">Get-STFWebReceiverService</a>
+        
+            <ul style="display:none">
+            
+                <li class="toctree-l3"><a href="#get-stfwebreceiverservice">Get-STFWebReceiverService</a></li>
+                
+                    <li><a class="toctree-l4" href="#syntax">Syntax</a></li>
+                
+                    <li><a class="toctree-l4" href="#detailed-description">Detailed Description</a></li>
+                
+                    <li><a class="toctree-l4" href="#related-commands">Related Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#parameters">Parameters</a></li>
+                
+                    <li><a class="toctree-l4" href="#input-type">Input Type</a></li>
+                
+                    <li><a class="toctree-l4" href="#return-values">Return Values</a></li>
+                
+                    <li><a class="toctree-l4" href="#examples">Examples</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverSiteStyle/">Set-STFWebReceiverSiteStyle</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Clear-STFWebReceiverSiteStyle/">Clear-STFWebReceiverSiteStyle</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverSiteStyle/">Get-STFWebReceiverSiteStyle</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverStoreProxy/">Get-STFWebReceiverStoreProxy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverStrictTransportSecurity/">Set-STFWebReceiverStrictTransportSecurity</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverStrictTransportSecurity/">Get-STFWebReceiverStrictTransportSecurity</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Set-STFWebReceiverUserInterface/">Set-STFWebReceiverUserInterface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" style="width:250px;" href="../Get-STFWebReceiverUserInterface/">Get-STFWebReceiverUserInterface</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>StoreFront SDK PowerShell Modules &raquo;</li>
+        
+      
+        
+          <li>Citrix.StoreFront.WebReceiver &raquo;</li>
+        
+      
+    
+    <li>Get-STFWebReceiverService</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <h1 id="get-stfwebreceiverservice">Get-STFWebReceiverService<a class="headerlink" href="#get-stfwebreceiverservice" title="Permanent link">&para;</a></h1>
+<p>Get Receiver for Web service</p>
+<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>Get-STFWebReceiverService [[-VirtualPath] &lt;String&gt;] [[-SiteId] &lt;Int64&gt;] [[-VirtualPath] &lt;String&gt;] [[-SiteId] &lt;Int64&gt;] [&lt;CommonParameters&gt;]
+Get-STFWebReceiverService [-StoreService] &lt;StoreService&gt; [[-VirtualPath] &lt;String&gt;] [[-SiteId] &lt;Int64&gt;] [&lt;CommonParameters&gt;]
+Get-STFWebReceiverService [-AuthenticationService] &lt;AuthenticationService&gt; [[-VirtualPath] &lt;String&gt;] [[-SiteId] &lt;Int64&gt;] [&lt;CommonParameters&gt;]
+</pre></div>
+
+
+<h2 id="detailed-description">Detailed Description<a class="headerlink" href="#detailed-description" title="Permanent link">&para;</a></h2>
+<p>Get the Receiver for Web services that match the supplied IIS site id, virtual path or are connected to the supplied Store or Authentication service.</p>
+<h2 id="related-commands">Related Commands<a class="headerlink" href="#related-commands" title="Permanent link">&para;</a></h2>
+<p><em><a href="../Add-STFWebReceiverService">Add-STFWebReceiverService</a>
+</em><a href="../Remove-STFWebReceiverService">Remove-STFWebReceiverService</a></p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required?</th>
+<th>Pipeline Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VirtualPath</td>
+<td>Virtual path filter</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>SiteId</td>
+<td>IIS site id filter</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>StoreService</td>
+<td>Store service filter</td>
+<td>true</td>
+<td>true (ByValue)</td>
+</tr>
+<tr>
+<td>AuthenticationService</td>
+<td>Authentication service filter</td>
+<td>true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h2 id="input-type">Input Type<a class="headerlink" href="#input-type" title="Permanent link">&para;</a></h2>
+<h3 id="systemstring">System.String<a class="headerlink" href="#systemstring" title="Permanent link">&para;</a></h3>
+<p>Parameter VirtualPath: The .NET 'System.String' reference type</p>
+<h3 id="systemint64">System.Int64<a class="headerlink" href="#systemint64" title="Permanent link">&para;</a></h3>
+<p>Parameter SiteId: The .NET 'System.Int64' value type</p>
+<h3 id="citrixstorefrontmodelstorestoreservice">Citrix.StoreFront.Model.Store.StoreService<a class="headerlink" href="#citrixstorefrontmodelstorestoreservice" title="Permanent link">&para;</a></h3>
+<p>Parameter StoreService: A .NET class representing the configuration of a StoreFront Store service</p>
+<h3 id="citrixstorefrontmodelauthenticationauthenticationservice">Citrix.StoreFront.Model.Authentication.AuthenticationService<a class="headerlink" href="#citrixstorefrontmodelauthenticationauthenticationservice" title="Permanent link">&para;</a></h3>
+<p>Parameter AuthenticationService: A .NET class representing the configuration of a StoreFront Authentication service</p>
+<h2 id="return-values">Return Values<a class="headerlink" href="#return-values" title="Permanent link">&para;</a></h2>
+<h3 id="webreceiverservice">WebReceiverService<a class="headerlink" href="#webreceiverservice" title="Permanent link">&para;</a></h3>
+<p>A .NET class representing the configuration of a StoreFront Web Receiver service</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="example-1-get-receiver-for-web-services">EXAMPLE 1 Get Receiver for Web services<a class="headerlink" href="#example-1-get-receiver-for-web-services" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>Get-STFWebReceiverService
+</pre></div>
+
+
+<p>REMARKS
+Get all configured Receiver for Web services.
+OUTPUT</p>
+<div class="codehilite"><pre><span></span><span class="n">WebReceiver</span>                      <span class="o">:</span> <span class="n">Citrix</span><span class="o">.</span><span class="na">StoreFront</span><span class="o">.</span><span class="na">Model</span><span class="o">.</span><span class="na">ReceiverForWeb</span><span class="o">.</span><span class="na">WebReceiver</span>
+<span class="n">ServiceId</span>                        <span class="o">:</span> <span class="mi">80</span><span class="n">fb5f9f</span><span class="o">-</span><span class="mi">0</span><span class="n">d10</span><span class="o">-</span><span class="mi">4</span><span class="n">cdf</span><span class="o">-</span><span class="n">ad1e</span><span class="o">-</span><span class="n">d36723afc33a</span>
+<span class="n">ProducerService</span>                  <span class="o">:</span> <span class="n">Receiver</span> <span class="k">for</span> <span class="n">Web</span> <span class="n">Token</span> <span class="n">Producer</span>
+<span class="n">ConsumerService</span>                  <span class="o">:</span> <span class="n">Receiver</span> <span class="k">for</span> <span class="n">Web</span> <span class="n">Token</span> <span class="n">Consumer</span>
+<span class="n">ServiceTokenCertificate</span>          <span class="o">:</span> <span class="n">F968ABF7298DB23DF9B1446C01AE7886F1BD24C9</span>
+<span class="n">AuthenticationServiceVirtualPath</span> <span class="o">:</span> <span class="sr">/Citrix/</span><span class="n">StoreAuth</span>
+<span class="n">StoreServiceVirtualPath</span>          <span class="o">:</span> <span class="sr">/Citrix/</span><span class="n">Store</span>
+<span class="n">SiteId</span>                           <span class="o">:</span> <span class="mi">1</span>
+<span class="n">VirtualPath</span>                      <span class="o">:</span> <span class="sr">/Citrix/</span><span class="n">StoreWeb</span>
+<span class="n">FriendlyName</span>                     <span class="o">:</span> <span class="sr">/Citrix/</span><span class="n">StoreWeb</span>
+<span class="n">Hmacs</span>                            <span class="o">:</span> <span class="o">{</span><span class="n">appShortcuts</span><span class="o">:</span><span class="n">waN9widXd9HfoYgORoocOM5FvW8RwDKQcQlO</span><span class="o">+</span><span class="n">Nxu4RfDcJVBm5BKotkRn1M61AvBgQDRhX</span>
+                                   <span class="n">y5vmfafC7XyvWKrw</span><span class="o">==,</span> <span class="n">rfWebGeneric</span><span class="o">:</span><span class="mi">3</span><span class="n">s49B</span><span class="sr">/XhMQhzhmqcjV8O9qttDQM/</span><span class="mi">91</span><span class="n">Syp7VMoe7vGx69ousmpd7</span>
+                                   <span class="n">vag7qWjWj8IQuQO2</span><span class="o">+</span><span class="n">gQjawxaqQXDdsw9khw</span><span class="o">==}</span>
+<span class="n">Certificates</span>                     <span class="o">:</span> <span class="o">{</span><span class="n">F968ABF7298DB23DF9B1446C01AE7886F1BD24C9</span><span class="o">,</span> <span class="n">DED6AB26AF47C2A7AD8E33D00924B5019A6AA2AD</span><span class="o">}</span>
+<span class="n">TokenManagers</span>                    <span class="o">:</span> <span class="o">{</span><span class="n">Receiver</span> <span class="k">for</span> <span class="n">Web</span> <span class="n">Token</span> <span class="n">Producer</span><span class="o">,</span> <span class="n">Receiver</span> <span class="k">for</span> <span class="n">Web</span> <span class="n">Token</span> <span class="n">Consumer</span><span class="o">}</span>
+<span class="n">Routing</span>                          <span class="o">:</span> <span class="o">:</span>
+<span class="n">ServiceRef</span>                       <span class="o">:</span> <span class="mi">1</span><span class="n">__Citrix_StoreWeb</span>
+<span class="n">ConfigurationFile</span>                <span class="o">:</span> <span class="n">C</span><span class="o">:\</span><span class="n">inetpub</span><span class="o">\</span><span class="n">wwwroot</span><span class="o">\</span><span class="n">Citrix</span><span class="o">\</span><span class="n">StoreWeb</span><span class="o">\</span><span class="n">web</span><span class="o">.</span><span class="na">config</span>
+<span class="n">TenantId</span>                         <span class="o">:</span> <span class="mi">860</span><span class="n">e9401</span><span class="o">-</span><span class="mi">39</span><span class="n">c8</span><span class="o">-</span><span class="mi">4</span><span class="n">f2c</span><span class="o">-</span><span class="mi">928</span><span class="n">d</span><span class="o">-</span><span class="mi">34251102</span><span class="n">b840</span>
+</pre></div>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../Add-STFWebReceiverService/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../Set-STFWebReceiverSiteStyle/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

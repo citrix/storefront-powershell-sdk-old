@@ -1,12 +1,12 @@
-#Citrix Common Forms Authentication API
+# Citrix Common Forms Authentication API
 
-#Introduction
+# Introduction
 
-##Scope
+## Scope
 
 The purpose of this document is to describe the StoreFront Common Forms Authentication Application Programming Interface.
 
-##Background
+## Background
 
 Citrix has devised a common authentication protocol that is implemented by its next generation services and gateway platforms, referred to here as StoreFront Services and NetScaler Gateway. Citrix is implementing client support, in Receiver and Worx, for this common authentication protocol in native user agents for the major device platforms, notably Windows, Mac, iOS, Android, Linux, and in Receiver for Web for browser user agents. See StoreFront Token Services v2.0 [1] for more details.
 
@@ -20,7 +20,7 @@ The form generation and handling can be delegated from NetScaler Gateway to a St
 
 This document details the StoreFront Services v2.6 conversation, specifying the messages at the HTTP level.
 
-##References
+## References
 
 1.StoreFront Token Services v2.0
 
@@ -30,7 +30,7 @@ This document details the StoreFront Services v2.6 conversation, specifying the 
 
 4.Receiver Common Authentication Forms Language v2.6
 
-#StoreFront Conversation
+# StoreFront Conversation
 
 For maximum interoperability, the protocol is a REST API, that is, XML forms transmitted over HTTPS. The flow of forms and responses constitutes a conversation that can have state associated with the overall conversation through the use of HTTP sessions.
 
@@ -130,7 +130,7 @@ Should be interpreted as: "I prefer Danish, but will accept British English and 
 
 If a language cannot be negotiated, then a default language will be used, typically English.
 
-##Client Response to a Form
+## Client Response to a Form
 
 - URL: Obtained from the current form
 - HTTP Method: POST
@@ -144,7 +144,7 @@ In response to a form the client will post back the requested information in the
 Note to server implementors: Existing clients may encode incorrectly, using ‘%20’ instead of ‘+’ to encode spaces, and may use UTF-8 encoding for extended multilingual characters that server implementations must be able to cope with.
 A detailed discussion of how to form the client response for each user input type is discussed in the section named: Client Responses for Form Input.
 
-###Wire-level Example
+### Wire-level Example
 
 ***Form from StoreFront***
 
@@ -366,7 +366,7 @@ Content-Length: 3408
 </requesttokenresponse>
 ```
 
-##Client Persistent Storage
+## Client Persistent Storage
 
 Client persistent storage is needed by third parties using the Citrix Authentication SDK to implement authentication methods that currently rely on persistent browser cookies, e.g. for assigning a unique ID to user agents.
 
@@ -399,7 +399,7 @@ Notes to server implementors:
 
 Note to client implementors: Clients should treat a storage value as an opaque string and should not attempt to interpret the value. The content of a storage value is meaningful only to the originating server.
 
-###Server-to-Client HTTP Responses
+### Server-to-Client HTTP Responses
 
 An X-Citrix-AM-Storage header on a response is a directive for the client to persistently and securely store the value on behalf of the sending authentication service. Clients should store the received value immediately and not wait until the end of the authentication conversation, such that if an authentication attempt is abandoned the client will be able to send the last seen value on starting the next authentication attempt.
 

@@ -1,18 +1,18 @@
-#Overview
+# Overview
 
-##Introduction
+## Introduction
 
 This sample for the StoreFront Authentication SDK demonstrates how to create and add a new authentication protocol, CertificateIdentityDeclaration, to StoreFront.
 This protocol allows a client to send a certificate to the server to identify a user, without providing proof that it has access to the associated private key. The service uses the built-in Kerberos S4U support to map this certificate to an account, verify the account, and extract the group information associated with the account. An identification-level token is then constructed that can be used to launch a session where the user has to fully authenticate to gain access.
 
-##Installer
+## Installer
 
 In common with the other samples, a pre-built installer is provided in addition to the source code.
 Before attempting to deploy the pre-built sample installers, it is required to add the certificate at AuthSDK.zip/Certificates/YourCompany.cer to the Third-Party Root Certification Authorities store of the Local Computer account where StoreFront is installed. This is not required for the development machine. If this step is not completed, then the StoreFront Administration Console will display an error because the digital signature of the PowerShell modules associated with this customization will fail to verify.
 The installer verifies that there is not an existing customization that implements CertificateIdentityDeclaration before deploying the StoreFront Feature package and the add-ins to the administration console. To actually deploy and enable a sample the “Add/Remove Methods” action from the “Authentication” node of the StoreFront Administration Console should be used.
 Before attempting to uninstall a sample, the associated authentication method must first be removed using the “Add/Remove Methods” action. If this is not done, attempting to uninstall will result in a dialog informing the administrator that the feature should be removed using the StoreFront Administration Console first. The sample can then be removed by using the standard “Add/Remove Programs” control panel applet.
 
-#Code Sample
+# Code Sample
 
 ## Visual Studio Solution Layout
 

@@ -1,6 +1,6 @@
-#Overview
+# Overview
 
-##Introduction
+## Introduction
 
 This sample for the StoreFront Authentication SDK demonstrates how to create and add a custom form implementation to StoreFront. As described in the StoreFront Services Authentication SDK document, this protocol will be advertised to the clients as: CustomForms. The clients are required to recognize this protocol identifier and map it to their existing Common Forms rendering. Clients will give preference to this new protocol over the existing ExplicitForms protocol, should both be available.
 
@@ -43,9 +43,9 @@ The installer verifies that there is not an existing customization that implemen
 
 Before attempting to uninstall a sample, the associated authentication method must first be removed using the “Add/Remove Methods” action. If this is not done, attempting to uninstall will result in a dialog informing the administratorthat the feature should be removed using the StoreFront Administration Console first. The sample can then be removed by using the standard “Add/Remove Programs” control panel applet.
 
-#Code Sample
+# Code Sample
 
-##Visual Studio Solution Layout
+## Visual Studio Solution Layout
 
 This sample demonstrates as many aspects of the SDK as possible, and is composed of seven projects:
 
@@ -65,7 +65,7 @@ This sample demonstrates as many aspects of the SDK as possible, and is composed
 
 All the projects target the .NET Framework 4.5 and the MSIL platform, unless specifically stated. Projects that target .NET Framework 3.5 are either part of the StoreFront Administration Console, or loaded by the Console. The rationale behind this is discussed in the StoreFront Services Authentication SDK document.
 
-##Configuration Project
+## Configuration Project
 
 This C# class library project follows the standard pattern for a StoreFront configuration project and contains:
 
@@ -77,7 +77,7 @@ This C# class library project follows the standard pattern for a StoreFront conf
 	- This project is targeted at .NET Framework 3.5, because it will be used by the StoreFront PowerShell Configuration Provider, which is used by the StoreFront Administration Console. See the StoreFront Services Authentication SDK document for more information.
 	- In order for the StoreFront PowerShell Configuration Provider to be able to load the configuration section, this assembly must be placed in the .NET Global Assembly Cache, and so must be strongly named.
 
-##Feature Project
+## Feature Project
 
 This C# class library project contains the custom classes for controlling the forms conversation; see the StoreFront Authentication Form Generation document for more details. These classes include:
 
@@ -91,7 +91,7 @@ The project also contains the start-up module that is responsible for populating
 
 In addition, there is a class following the standard pattern for logging to aid with diagnostics.
 
-##Console.Extension Project
+## Console.Extension Project
 
 This C# class library project contains:
 - The authentication extension class to provide status messages including:
@@ -110,7 +110,7 @@ This C# class library project contains:
 !!! info "Note"
 	This project is targeted at .NET Framework 3.5, because it will be loaded by the StoreFront Administration Console.
 
-##Installer Project
+## Installer Project
 
 This WiX project is responsible for the following:
 
@@ -122,7 +122,7 @@ This WiX project is responsible for the following:
 
 Note: This project is targeted at the x64 platform
 
-##Installer.CustomActions Project
+## Installer.CustomActions Project
 
 This C# class library project uses the standard pattern, as described in the StoreFront Authentication SDK document, with the Feature identifier and Authentication Protocol Name set to appropriate values for this customization.
 
@@ -130,6 +130,6 @@ This C# class library project uses the standard pattern, as described in the Sto
 	- This project is targeted at .NET Framework 3.5.
 	- This project is targeted at the x64 platform to ensure that it has access to the correct registry locations.
 
-##Unit Tests Project
+## Unit Tests Project
 
 This project contains standard web.config merge and unmerge, route, and protocol choice tests, in addition to tests of the entire conversation including changing expired password and error cases.
